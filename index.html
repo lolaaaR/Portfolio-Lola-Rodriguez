@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Lola Rodriguez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="img.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">LR PORTFOLIO</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+                <li><a href="#habilidades">HABILIDADES</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="perfil-wrapper">
+            <img src="./img/imgPortfolio.jpeg" alt="Lola" class="foto-perfil">
+        </div>
+        <div class="badge-rol">✨ DESARROLLADORA FULL STACK</div>
+        
+        <h1>Hola, soy <span class="texto-degradado">Lola Rodriguez</span></h1>
+        <p class="subtitulo">Creando experiencias web modernas con pasión y dedicación</p>
+        
+        <a href="#proyectos" class="btn-principal">VER PROYECTOS ↓</a>
+    
+    </section>
+
+    <section id="sobre-mi" class="seccion-clara">
+    <h2>Sobre Mí</h2>
+    <div class="contenido-sobremi-container">
+        <div class="sobremi-texto">
+            <p>¡Hola! Soy <span class="resaltado">Lola</span>, estudiante de Programación en la UTN-FRGP y desarrolladora en formación. Me gusta experimentar con proyectos prácticos y
+    compartir ideas en equipo.</p>
+            <p>Mi enfoque combina la lógica sólida del backend con la creatividad del frontend, buscando siempre el equilibrio perfecto entre funcionalidad y estética.</p>
+        </div>
+
+        <div class="sobremi-info-extra">
+            <div class="dato-item">
+                <span class="icono">📍</span>
+                <div>
+                    <strong>Ubicación</strong>
+                    <p>Buenos Aires, Argentina</p>
+                </div>
+            </div>
+            <div class="dato-item">
+                <span class="icono" >🎓</span>
+                <div>
+                    <strong>Educación</strong>
+                    <p>UTN FRGP - Tec. Universitaria en Programación</p>
+                </div>
+            </div>
+            <div class="dato-item">
+                <span class="icono">🚀</span>
+                <div>
+                    <strong>Intereses</strong>
+                    <p>UI Design & C# Development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <section id="habilidades" class="seccion-clara">
+    <h2>Habilidades</h2>
+    <div class="contenedor-habilidades">
+        
+        <div class="skill-card">
+            <div class="skill-icon-circle">🎨</div>
+            <h3>Frontend</h3>
+            <div class="skill-tags-container">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Figma</span>
+            </div>
+            <div class="nivel-badge">Nivel Junior</div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon-circle">⚙️</div>
+            <h3>Backend</h3>
+            <div class="skill-tags-container">
+                <span class="tag">C#</span>
+                <span class="tag">ASP.NET</span>
+                <span class="tag">C++</span>
+            </div>
+            <div class="nivel-badge">Nivel Junior</div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon-circle">🛠️</div>
+            <h3>Herramientas</h3>
+            <div class="skill-tags-container">
+                <span class="tag">SQL Server</span>
+                <span class="tag">Git & GitHub</span>
+            </div>
+            <div class="nivel-badge">Nivel Junior</div>
+        </div>
+
+    </div>
+</section>
+
+    <section id="proyectos" class="seccion-clara">
+    <h2>Mis Proyectos</h2>
+    <div class="contenedor-proyectos">
+        
+        <div class="skill-card">
+            <div class="carrusel-contenedor">
+                <button class="carrusel-btn prev" onclick="moverCarrusel(-1, 'carrusel-winform')">&#10094;</button>
+                
+                <div class="carrusel-slide" id="carrusel-winform">
+                    <img src="./img/winform1.png" alt="Pantalla de Inicio Winform" class="proyecto-img">
+                    <img src="./img/winform2.png" alt="Gestión de Artículos" class="proyecto-img">
+                    <img src="./img/winform3.png" alt="Categoria" class="proyecto-img">
+                    <img src="./img/winform4.png" alt="Marca" class="proyecto-img">
+                    <img src="./img/winform5.png" alt="Imagen" class="proyecto-img">
+                    <img src="./img/winform6.png" alt="Modificar" class="proyecto-img">
+                </div>
+
+                <button class="carrusel-btn next" onclick="moverCarrusel(1, 'carrusel-winform')">&#10095;</button>
+            </div>
+            
+            <h3>App de Escritorio (WinForm)</h3>
+            <h4 style="color: rgb(222, 161, 224);">Proyecto para la Facultad en equipo</h4>
+            <p>Aplicación desarrollada con C# y WinForm, utilizando SQL Server.</p>
+            <a href="https://github.com/Hurakant/tp-winform-equipo-12b.git" target="_blank" class="btn-principal" target="_blank">REPOSITORIO</a>
+        </div>
+
+        <div class="skill-card">
+            <div class="carrusel-contenedor">
+                <div class="carrusel-slide" id="carrusel-asp">
+                    <img src="./img/comingsoon.png" alt="coming soon" class="proyecto-img">
+                </div>
+            </div>
+            
+            <h3>App con ASP .NET</h3>
+            <h4 style="color: rgb(222, 161, 224);">Proyecto para la Facultad</h4>
+            <p>Próximamente: Gestión web completa.</p>
+            <a href="#" class="btn-principal">PRÓXIMAMENTE</a>
+        </div>
+
+    </div>
+</section>
+
+ <section id="contacto" class="seccion-clara">
+    <div class="contacto-wrapper">
+        <h2>Hablemos</h2>
+        <p class="contacto-subtitulo">¿Tenes un proyecto en mente? ¡Me encantaría escucharte!</p>
+        
+        <div class="contacto-card">
+
+        <form action="https://formspree.io/f/xojrdezg" method="POST">
+            <input type="text" name="name" placeholder="Tu Nombre" required>
+            <input type="email" name="email" placeholder="Tu Email" required>
+            <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+            <button type="submit" class="btn-principal">ENVIAR MENSAJE</button>
+        </form>
+        </div>
+
+        <div class="redes">
+            </a>
+            <a href="https://github.com/lolaaaR?tab=repositories" target="_blank" class="red-link">
+                <span class="red-icon">💻</span> GitHub
+            </a>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
