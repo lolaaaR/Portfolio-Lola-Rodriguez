@@ -20,11 +20,8 @@ JavaScript: Lógica para carruseles.
 
 📁 Estructura del Proyecto
 
-├── img/                -- Imágen de perfil, logos y capturas de proyectos
-├── index.html          -- Archivo principal (estructura)
-├── style.css           -- Estilos generales y layout
-├── img.css             -- Estilos específicos de tarjetas y carrusel
-└── script.js           -- Funcionalidad carrusel
+<img width="523" height="112" alt="image" src="https://github.com/user-attachments/assets/f435acd0-16d3-4f48-885d-5fbc5eb18c5f" />
+
 
 🌟 Proyectos Destacados
 📦 Gestión de Artículos (WinForm)
