@@ -1,5 +1,6 @@
 ❤️ Mi Portfolio  - Lola Rodriguez
-¡Bienvenido a mi Portfolio! Este proyecto es mi portfolio personal, diseñado para mostrar mi camino como Desarrolladora Full Stack y los proyectos en los que voy a ir trabajando.
+
+Este proyecto es mi portfolio personal, diseñado para mostrar mi camino como Desarrolladora Full Stack y los proyectos en los que voy a ir trabajando.
 
 ✨ Características Principales
 Diseño Moderno: Estética con transparencias y desenfoques.
