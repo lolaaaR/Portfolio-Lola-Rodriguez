@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NovaHub - Tienda de Juegos | Lola Rodriguez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="img.css">
+    <link rel="stylesheet" href="detalle.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">LR PORTFOLIO</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">← VOLVER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="detalle-hero">
+        <a href="index.html" class="btn-volver">← Volver al portfolio</a>
+        <div class="badge-rol">📁 PROYECTO GRUPAL</div>
+        <h1>NovaHub <span class="texto-degradado">Tienda de Juegos</span></h1>
+        <p class="subtitulo">E-commerce en ASP.NET WebForms con carrito, roles y validación de stock</p>
+    </section>
+
+    <section class="seccion-clara">
+        <div class="detalle-contenedor">
+
+            <div class="carrusel-contenedor detalle-galeria">
+                <button class="carrusel-btn prev" onclick="moverCarrusel(-1, 'carrusel-novahub')">&#10094;</button>
+                <img id="carrusel-novahub"
+                     class="proyecto-img"
+                     src="./img/novahub1.png"
+                     alt="NovaHub"
+                     data-indice="0"
+                     data-imagenes='["./img/novahub1.png","./img/novahub2.png","./img/novahub3.png","./img/novahub4.png","./img/novahub5.png","./img/novahub6.png"]'>
+                <button class="carrusel-btn next" onclick="moverCarrusel(1, 'carrusel-novahub')">&#10095;</button>
+                <div class="carrusel-contador" id="carrusel-novahub-contador">1 / 6</div>
+            </div>
+
+            <div class="detalle-texto">
+                <h2>¿Qué hace?</h2>
+                <p>NovaHub es una tienda de videojuegos online desarrollada en equipo para la facultad con ASP.NET WebForms. Permite a los usuarios buscar y comprar productos físicos y digitales, gestionar un carrito de compras dinámico, y diferencia la experiencia según el rol del usuario logueado (cliente o administrador).</p>
+
+                <h2>Funcionalidades principales</h2>
+                <ul class="detalle-lista">
+                    <li>Buscador en la barra de navegación que <strong>filtra</strong> el catálogo por texto</li>
+                    <li>Carrito de compras con contador de artículos actualizado en tiempo real</li>
+                    <li>Botones de sumar/restar cantidad directamente desde el listado de productos</li>
+                    <li>Validación de stock, diferenciando productos físicos de digitales</li>
+                    <li>Vistas y permisos distintos según el <strong>rol</strong> del usuario (cliente / vendedor / administrador)</li>
+                    <li>Edición de productos habilitada solo para usuarios con rol de administrador</li>
+                    <li>Persistencia de datos con base de datos <strong>SQL Server</strong> (productos, usuarios, pedidos)</li>
+                </ul>
+
+                <h2>Mi rol en el equipo</h2>
+                <p>Dentro del equipo me enfoqué en la lógica de roles de usuario, implementando los permisos y vistas diferenciadas para administrador y vendedor. También trabajé en algunos filtros de búsqueda del catálogo, y en el desarrollo del inicio de sesión y el registro de nuevos usuarios.</p>
+
+                <h2>Tecnologías</h2>
+                <div class="proyecto-tags">
+                    <span class="tag">C#</span>
+                    <span class="tag">ASP.NET WebForms</span>
+                    <span class="tag">SQL Server</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Git & GitHub</span>
+                </div>
+
+                <div class="proyecto-botones" style="margin-top: 30px;">
+                    <a href="https://github.com/Hurakant/TPC-TiendaDeJuegos-Grupo-12b" target="_blank" class="btn-principal">VER REPOSITORIO</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>App de Escritorio (WinForm) | Lola Rodriguez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="img.css">
+    <link rel="stylesheet" href="detalle.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">LR PORTFOLIO</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">← VOLVER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="detalle-hero">
+        <a href="index.html" class="btn-volver">← Volver al portfolio</a>
+        <div class="badge-rol">📁 PROYECTO GRUPAL</div>
+        <h1>App de Escritorio <span class="texto-degradado">(WinForm)</span></h1>
+        <p class="subtitulo">Sistema de gestión de artículos con C# y SQL Server</p>
+    </section>
+
+    <section class="seccion-clara">
+        <div class="detalle-contenedor">
+
+            <div class="carrusel-contenedor detalle-galeria">
+                <button class="carrusel-btn prev" onclick="moverCarrusel(-1, 'carrusel-winform')">&#10094;</button>
+                <img id="carrusel-winform"
+                     class="proyecto-img"
+                     src="./img/winform1.png"
+                     alt="App WinForm"
+                     data-indice="0"
+                     data-imagenes='["./img/winform1.png","./img/winform2.png","./img/winform3.png","./img/winform4.png","./img/winform5.png","./img/winform6.png"]'>
+                <button class="carrusel-btn next" onclick="moverCarrusel(1, 'carrusel-winform')">&#10095;</button>
+                <div class="carrusel-contador" id="carrusel-winform-contador">1 / 6</div>
+            </div>
+
+            <div class="detalle-texto">
+                <h2>¿Qué hace?</h2>
+                <p>Es una aplicación de escritorio desarrollada en equipo para la facultad, que permite gestionar el inventario de una tienda: alta, baja y modificación de artículos, categorías y marcas, con carga de imágenes y validaciones de datos. Toda la información se persiste en una base SQL Server.</p>
+
+                <h2>Funcionalidades principales</h2>
+                <ul class="detalle-lista">
+                    <li>Login y validación de usuario</li>
+                    <li>ABM completo de artículos, categorías y marcas</li>
+                    <li>Carga y visualización de imágenes por artículo</li>
+                    <li>Validaciones de formulario antes de guardar</li>
+                    <li>Conexión y consultas a SQL Server</li>
+                </ul>
+
+                <h2>Tecnologías</h2>
+                <div class="proyecto-tags">
+                    <span class="tag">C#</span>
+                    <span class="tag">WinForm</span>
+                    <span class="tag">SQL Server</span>
+                    <span class="tag">Git & GitHub</span>
+                </div>
+
+                <div class="proyecto-botones" style="margin-top: 30px;">
+                    <a href="https://github.com/Hurakant/tp-winform-equipo-12b.git" target="_blank" class="btn-principal">VER REPOSITORIO</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
